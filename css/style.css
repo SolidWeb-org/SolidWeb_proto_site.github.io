@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+:root {
+    --dark: #27104E;
+    --primary: #4C43DD;
+    --secondary: #002;
+    --light: #fBfBfB;
+    --service: #003;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary);
+    color: var(--dark);
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/*header*/
+.header {
+    display: flex;
+    gap: 7vw;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 30px 0;
+}
+
+.header__nav {
+    display: flex;
+    gap: 3.2vw;
+    flex-grow: 1;
+}
+
+.header__link {
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.35s;
+}
+
+.header__link:hover {
+    color: var(--primary);
+}
+
+.header__btn {
+    padding: 16px 24px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.35s;
+}
+
+.header__btn:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/*hero*/
+
+.hero {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hero__thumbs {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero_info {
+    padding-top: 40px;
+    max-width: 850px;
+    color: var(--light);
+    font-size: 24px;
+}
+
+.hero__info__text{
+    line-height: 40px;
+}
+
+.hero__info__title {
+    font-size: 64px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.header__info__btn {
+    display: inline-block;
+    margin-top: 52px;
+    padding: 20px 77px 20px 21px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.35s;
+    position: relative;
+}
+
+.header__info__btn:after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/arrow.svg);
+    background-size: cover;
+    position: absolute;
+    right: 16px;
+    top: calc(50% - 24px);
+}
+
+.header__info__btn:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/*services*/
+.services {
+    display: flex;
+    gap: 3.2vw;
+    padding: 60px 48px;
+}
+
+.services__col {
+    flex-basis: 320px;
+}
+
+.service__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.service__text {
+    color: var(--light);
+    margin: 0;
+}
+
+.hero__services {
+    background: var(--service);
+    border-radius: 25px;
+    margin-top: 80px;
+    width: 1200px;
+}
